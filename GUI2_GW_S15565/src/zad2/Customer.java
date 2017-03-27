@@ -1,9 +1,12 @@
 package zad2;
 
+import java.util.LinkedHashMap;
+
 public class Customer 
 {
 	String name;
 	int money;
+	ShoppingCart shoppingCart;
 
 	public Customer(String name, int money)
 	{
@@ -13,8 +16,21 @@ public class Customer
 
 	public ShoppingCart getShoppingCart()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		if(shoppingCart == null)
+			shoppingCart = new ShoppingCart();
+		
+		shoppingCart.customer = this;
+		
+		return shoppingCart;
+	}
+	
+	public LinkedHashMap get(Flower flower)
+	{
+		if(shoppingCart == null)
+			shoppingCart = new ShoppingCart();
+		
+		shoppingCart.insertFlower.put(flower, flower.amount);
+		return shoppingCart.insertFlower;
 	}
 
 	public String getCash()
@@ -32,6 +48,11 @@ public class Customer
 	{
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public String toString()
+	{
+		return "właściciel " + name;
 	}
 
 }

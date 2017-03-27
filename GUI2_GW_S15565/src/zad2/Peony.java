@@ -1,11 +1,13 @@
 package zad2;
 
-public class Peony
+public class Peony extends Flower
 {
 
 	public Peony(int amount)
 	{
-		// TODO Auto-generated constructor stub
+		name = "piwonia";
+		this.amount = amount;
+		colour = "czerwony";
 	}
 
 }

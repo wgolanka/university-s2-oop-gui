@@ -1,11 +1,14 @@
 package zad2;
 
-public class Lilac
+public class Lilac extends Flower
 {
 
 	public Lilac(int amount)
 	{
-		// TODO Auto-generated constructor stub
+		name = "bez";
+		this.amount = amount;
+		colour = "biały";
+//		System.out.println("creating flower");
 	}
 
 }

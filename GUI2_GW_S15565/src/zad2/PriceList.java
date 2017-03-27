@@ -1,16 +1,29 @@
 package zad2;
 
+import java.util.LinkedHashMap;
+
 public class PriceList 
 {
-	public static getInstance()
+	private static PriceList instance = null;
+	LinkedHashMap<String, Double> mapPrice;
+	protected PriceList(){}
+	
+	public static PriceList getInstance()
 	{
+		if(instance == null)
+			instance = new PriceList();
 		
+		return instance;
 	}
 
-	public void put(String flowerTag, double price)
+	@SuppressWarnings("rawtypes")
+	public static LinkedHashMap put(String flower, double price)
 	{
+		if(instance.mapPrice == null)
+			instance.mapPrice = new LinkedHashMap<String, Double>();
 		
-		
+		instance.mapPrice.put(flower, price);
+		return instance.mapPrice;
 	}
 
 }

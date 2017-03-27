@@ -34,7 +34,7 @@ public class FloristsTest {
     // Pewnie je umieścił na wózku sklepowyem
     // Zobaczmy co tam ma
     ShoppingCart wozekJanka = janek.getShoppingCart();
-    System.out.println("Przed płaceniem\n" + wozekJanka);
+    System.out.println("Przed płaceniem " + wozekJanka);
 
     // Teraz za to zapłaci...
     janek.pay();

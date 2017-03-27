@@ -1,11 +1,13 @@
 package zad2;
 
-public class Freesia
+public class Freesia extends Flower
 {
 
 	public Freesia(int amount)
 	{
-		// TODO Auto-generated constructor stub
+		name = "Frezja";
+		this.amount = amount;
+		colour = "żółty";
 	}
 
 }
