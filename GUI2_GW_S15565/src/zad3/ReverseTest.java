@@ -36,7 +36,7 @@ public class ReverseTest {
 
         System.out.println("Przywrócone i zmienione:");
         for (Reversible r : revers) {
-           /*<-  co tu trzeba napisać */
+        	System.out.println(r.reverse());
         }
       }
     }

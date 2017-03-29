@@ -10,8 +10,8 @@ package zad2;
 public class FloristsTest {
   // definicja metody sumowania wartosci kwiatów o podanym kolorze 
   static int valueOf(Box box, String color) {
-	return 0;
        /*<- tu trzeba wpisac kod metody */
+	  return 0;
   }
 
   public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class FloristsTest {
     // Pewnie je umieścił na wózku sklepowyem
     // Zobaczmy co tam ma
     ShoppingCart wozekJanka = janek.getShoppingCart();
-    System.out.println("Przed płaceniem " + wozekJanka);
+    System.out.println("Przed płaceniem\n" + wozekJanka);
 
     // Teraz za to zapłaci...
     janek.pay();

@@ -11,15 +11,30 @@ public class Main {
   public static void main(String[] args)
   {
     Spiewak s1 = new Spiewak("Carrey"){
-      /*<-  kod */
+
+		@Override
+		String sing()
+		{
+			return "oooooooooooo";
+		}
     };
 
     Spiewak s2 = new Spiewak("Houston"){
-      /*<-  kod */
+
+		@Override
+		String sing()
+		{
+			return "a4iBBiii";
+		}
     };
 
     Spiewak s3 = new Spiewak("Madonna"){
-      /*<-  kod */
+
+		@Override
+		String sing()
+		{
+			return "aAa";
+		}
     };
 
     Spiewak sp[] = {s1, s2, s3};
