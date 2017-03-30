@@ -5,24 +5,28 @@ import java.util.LinkedHashMap;
 public class ShoppingCart
 {
 	Customer customer;
-	LinkedHashMap<Flower, Double> insertFlower;
+	LinkedHashMap<Flower, Integer> inside;
+	static String flowers;
 	
 	public ShoppingCart()
 	{
-		insertFlower = new LinkedHashMap<Flower, Double>();
+		inside = new LinkedHashMap<Flower, Integer>();
 	}
-	
-	public String iter()
+
+	public String showCart()
 	{
-		for (Flower key : insertFlower.keySet())
+		flowers = "";
+		for (Flower key : inside.keySet())
 		{
-			System.out.println(key);
-		}
-		return "";
+			flowers += key.toString() + "\n";
+		}	
+		return flowers;
 	}
 	
 	public String toString()
 	{
-		return "Wózek "+ customer;
+		if(inside.isEmpty())
+			return " -- pusto";
+		return "Wózek "+ customer + "\n" + showCart();
 	}
 }

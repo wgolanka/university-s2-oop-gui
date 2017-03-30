@@ -5,9 +5,21 @@ public class Rose extends Flower
 
 	public Rose(int amount)
 	{
-		name = "róża";
+		super();
 		this.amount = amount;
-		colour = "czerwony";
+		
+	}
+
+	@Override
+	String getName()
+	{
+		return "róża";
+	}
+
+	@Override
+	String getColour()
+	{
+		return "czerwony";
 	}
 
 }

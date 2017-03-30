@@ -13,7 +13,7 @@ public class Main {
     Spiewak s1 = new Spiewak("Carrey"){
 
 		@Override
-		String sing()
+		String spiewaj()
 		{
 			return "oooooooooooo";
 		}
@@ -22,7 +22,7 @@ public class Main {
     Spiewak s2 = new Spiewak("Houston"){
 
 		@Override
-		String sing()
+		String spiewaj()
 		{
 			return "a4iBBiii";
 		}
@@ -31,7 +31,7 @@ public class Main {
     Spiewak s3 = new Spiewak("Madonna"){
 
 		@Override
-		String sing()
+		String spiewaj()
 		{
 			return "aAa";
 		}

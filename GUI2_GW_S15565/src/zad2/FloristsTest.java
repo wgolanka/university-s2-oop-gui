@@ -9,9 +9,19 @@ package zad2;
 
 public class FloristsTest {
   // definicja metody sumowania wartosci kwiatów o podanym kolorze 
-  static int valueOf(Box box, String color) {
-       /*<- tu trzeba wpisac kod metody */
-	  return 0;
+  static int valueOf(Box box, String colour) {
+     
+	  int sum = 0;
+	  
+	  for(Flower flower : box.boxMap.keySet())
+	  {
+		  if(box.boxMap.get(flower) == colour)
+		  {
+			  sum += flower.price * flower.amount;
+		  }
+	  }
+	  
+	  return sum;
   }
 
   public static void main(String[] args) {

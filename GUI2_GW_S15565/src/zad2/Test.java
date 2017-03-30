@@ -31,14 +31,17 @@ public class Test
 	  
 	    ShoppingCart wozekJanka = janek.getShoppingCart();
 	    System.out.println("Przed płaceniem " + wozekJanka);
-	    
-//	    System.out.println(wozekJanka.insertFlower.values());
-//	    for (String key : wozekJanka.insertFlower.keySet()) 
-//	    {
-//	    	System.out.println(key) ;
-//	    }
-	    
-//	    Flower ros = new Peony(2);
-//	    System.out.println(ros);
+	    Flower toRemove = null;
+	    for(Flower flower : wozekJanka.inside.keySet())
+		{
+			if(flower.price == 0)
+			{
+//				wozekJanka.insertFlower.remove(flower);
+				toRemove = flower;
+			}
+		}
+		wozekJanka.inside.remove(toRemove);
+	    System.out.println("\nPo" + wozekJanka);
+	
 	}
 }

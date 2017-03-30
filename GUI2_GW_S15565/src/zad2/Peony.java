@@ -5,9 +5,23 @@ public class Peony extends Flower
 
 	public Peony(int amount)
 	{
-		name = "piwonia";
+		super();
 		this.amount = amount;
-		colour = "czerwony";
+
+	}
+
+	@Override
+	String getName()
+	{
+		
+		return "piwonia";
+	}
+
+	@Override
+	String getColour()
+	{
+		// TODO Auto-generated method stub
+		return "czerwony";
 	}
 
 }

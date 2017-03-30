@@ -20,7 +20,7 @@ public abstract class Spiewak
 		addNextID++;
 	}
 	
-	abstract String sing();
+	abstract String spiewaj();
 
 	public static Spiewak najglosniej(Spiewak[] sp)
 	{		
@@ -28,7 +28,7 @@ public abstract class Spiewak
 		
 		for(int i = 0; i < sp.length; i++)
 		{
-			String song = sp[i].sing();
+			String song = sp[i].spiewaj();
 			char[] array = song.toCharArray();
 			
 			for(int j = 0; j < array.length; j++)
@@ -51,6 +51,6 @@ public abstract class Spiewak
 	
 	public String toString()
 	{
-		return "(" + id + ") " + surname + ": " + sing();
+		return "(" + id + ") " + surname + ": " + spiewaj();
 	}
 }
