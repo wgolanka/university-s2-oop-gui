@@ -15,7 +15,7 @@ public class FloristsTest {
 	  
 	  for(Flower flower : box.boxMap.keySet())
 	  {
-		  if(box.boxMap.get(flower) == colour)
+		  if(flower.colour.equals(colour))
 		  {
 			  sum += flower.price * flower.amount;
 		  }

@@ -17,7 +17,7 @@ public class PriceList
 	}
 
 	@SuppressWarnings("rawtypes")
-	public static LinkedHashMap put(String flower, double price)
+	public LinkedHashMap put(String flower, double price)
 	{
 		if(instance.mapPrice == null)
 			instance.mapPrice = new LinkedHashMap<String, Double>();

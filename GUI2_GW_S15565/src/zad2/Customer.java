@@ -44,7 +44,7 @@ public class Customer
 
 	public void pay()
 	{
-		deleteUnpriced();
+		removeUnpriced();
 		money -= getSum();
 	}
 	
@@ -57,7 +57,7 @@ public class Customer
 			sum += flower.amount * flower.price;
 			if(sum > money)
 			{
-				deleteUnpriced(flower);
+				removeUnpriced(flower);
 			}
 			else
 			{
@@ -67,7 +67,7 @@ public class Customer
 		return affordable;
 	}
 	
-	public ShoppingCart deleteUnpriced()
+	public ShoppingCart removeUnpriced()
 	{
 		List<Flower> toRemove = new ArrayList<Flower>();
 		for(Flower flower : shoppingCart.insideShoppingCart.keySet())
@@ -85,12 +85,11 @@ public class Customer
 		return shoppingCart;	
 	}
 	
-	public ShoppingCart deleteUnpriced(Flower flowerToRemove)
+	public ShoppingCart removeUnpriced(Flower flowerToRemove)
 	{
 		shoppingCart.insideShoppingCart.remove(flowerToRemove);
 		return shoppingCart;	
 	}
-
 	
 	public void pack(Box customerBox)
 	{
@@ -98,7 +97,7 @@ public class Customer
 		
 		for(Flower flower : shoppingCart.insideShoppingCart.keySet())
 		{
-			customerBox.boxMap.put(flower, flower.colour);
+			customerBox.boxMap.put(flower, flower.amount);
 		}
 		
 		shoppingCart.insideShoppingCart.clear();		
