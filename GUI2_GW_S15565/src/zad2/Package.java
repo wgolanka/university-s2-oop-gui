@@ -6,20 +6,18 @@ public class Package
 {
 	Customer customer;
 	LinkedHashMap<Flower, Integer> 
-	insideShoppingCart = 
-			new LinkedHashMap<Flower, Integer>(),
-			boxMap = 
-				new LinkedHashMap<Flower, Integer>();
-	static String flowers;
+			insideShoppingCart = new LinkedHashMap<Flower, Integer>(),
+			boxMap = new LinkedHashMap<Flower, Integer>();
+	static String flowerDescription;
 	
 	public String show(LinkedHashMap<Flower, Integer> map)
 	{
-		flowers = "";
+		flowerDescription = "";
 		for (Flower key : map.keySet())
 		{
-			flowers += key.toString() + "\n";
+			flowerDescription += key.toString() + "\n";
 		}	
-		return flowers;
+		return flowerDescription;
 	}
 
 }
