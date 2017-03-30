@@ -5,18 +5,18 @@ import java.util.LinkedHashMap;
 public class ShoppingCart
 {
 	Customer customer;
-	LinkedHashMap<Flower, Integer> inside;
+	LinkedHashMap<Flower, Integer> insideShoppingCart;
 	static String flowers;
 	
 	public ShoppingCart()
 	{
-		inside = new LinkedHashMap<Flower, Integer>();
+		insideShoppingCart = new LinkedHashMap<Flower, Integer>();
 	}
 
 	public String showCart()
 	{
 		flowers = "";
-		for (Flower key : inside.keySet())
+		for (Flower key : insideShoppingCart.keySet())
 		{
 			flowers += key.toString() + "\n";
 		}	
@@ -25,7 +25,7 @@ public class ShoppingCart
 	
 	public String toString()
 	{
-		if(inside.isEmpty())
+		if(insideShoppingCart.isEmpty())
 			return " -- pusto";
 		return "Wózek "+ customer + "\n" + showCart();
 	}

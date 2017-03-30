@@ -32,7 +32,7 @@ public class Test
 	    ShoppingCart wozekJanka = janek.getShoppingCart();
 	    System.out.println("Przed płaceniem " + wozekJanka);
 	    Flower toRemove = null;
-	    for(Flower flower : wozekJanka.inside.keySet())
+	    for(Flower flower : wozekJanka.insideShoppingCart.keySet())
 		{
 			if(flower.price == 0)
 			{
@@ -40,7 +40,7 @@ public class Test
 				toRemove = flower;
 			}
 		}
-		wozekJanka.inside.remove(toRemove);
+		wozekJanka.insideShoppingCart.remove(toRemove);
 	    System.out.println("\nPo" + wozekJanka);
 	
 	}

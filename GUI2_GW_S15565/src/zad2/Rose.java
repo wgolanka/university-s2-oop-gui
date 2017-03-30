@@ -7,7 +7,6 @@ public class Rose extends Flower
 	{
 		super();
 		this.amount = amount;
-		
 	}
 
 	@Override

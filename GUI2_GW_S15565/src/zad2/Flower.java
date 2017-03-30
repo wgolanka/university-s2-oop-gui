@@ -6,16 +6,16 @@ abstract class Flower
 	String colour;
 	int amount;
 	double price = -1;
-	
-	abstract String getName();
-	abstract String getColour();
-	
+
 	public Flower()
 	{
 		name = getName();
 		colour = getColour();
 		price = getPrice();
 	}
+	
+	abstract String getName();
+	abstract String getColour();
 	
 	double getPrice()
 	{
@@ -29,6 +29,6 @@ abstract class Flower
 	
 	public String toString()
 	{
-		return name + ", kolor: " + colour + ", ilość " + amount + ", cena " + getPrice();
+		return name + ", kolor: " + colour + ", ilość " + amount + ", cena " + price;
 	}
 }

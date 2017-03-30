@@ -33,8 +33,8 @@ public class Customer
 		if(shoppingCart == null)
 			shoppingCart = new ShoppingCart();
 		
-		shoppingCart.inside.put(flower, flower.amount);
-		return shoppingCart.inside;
+		shoppingCart.insideShoppingCart.put(flower, flower.amount);
+		return shoppingCart.insideShoppingCart;
 	}
 
 	public String getCash()
@@ -52,7 +52,7 @@ public class Customer
 	{
 		double sum = 0.0;
 		double affordable = 0.0;
-		for(Flower flower : shoppingCart.inside.keySet())
+		for(Flower flower : shoppingCart.insideShoppingCart.keySet())
 		{
 			sum += flower.amount * flower.price;
 			if(sum > money)
@@ -70,7 +70,7 @@ public class Customer
 	public ShoppingCart deleteUnpriced()
 	{
 		List<Flower> toRemove = new ArrayList<Flower>();
-		for(Flower flower : shoppingCart.inside.keySet())
+		for(Flower flower : shoppingCart.insideShoppingCart.keySet())
 		{
 			if(!priceList.mapPrice.containsKey(flower.name))
 			{
@@ -79,7 +79,7 @@ public class Customer
 		}	
 		for(Flower flower : toRemove)
 		{
-			shoppingCart.inside.remove(flower);
+			shoppingCart.insideShoppingCart.remove(flower);
 		}
 		
 		return shoppingCart;	
@@ -87,7 +87,7 @@ public class Customer
 	
 	public ShoppingCart deleteUnpriced(Flower flowerToRemove)
 	{
-		shoppingCart.inside.remove(flowerToRemove);
+		shoppingCart.insideShoppingCart.remove(flowerToRemove);
 		return shoppingCart;	
 	}
 
@@ -96,12 +96,12 @@ public class Customer
 	{
 		customerBox.customer = this;
 		
-		for(Flower flower : shoppingCart.inside.keySet())
+		for(Flower flower : shoppingCart.insideShoppingCart.keySet())
 		{
 			customerBox.boxMap.put(flower, flower.colour);
 		}
 		
-		shoppingCart.inside.clear();		
+		shoppingCart.insideShoppingCart.clear();		
 	}
 	
 	public String toString()

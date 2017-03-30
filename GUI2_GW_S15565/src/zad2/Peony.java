@@ -7,20 +7,17 @@ public class Peony extends Flower
 	{
 		super();
 		this.amount = amount;
-
 	}
 
 	@Override
 	String getName()
 	{
-		
 		return "piwonia";
 	}
 
 	@Override
 	String getColour()
 	{
-		// TODO Auto-generated method stub
 		return "czerwony";
 	}
 

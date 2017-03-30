@@ -2,13 +2,22 @@ package zad2;
 
 public class Lilac extends Flower
 {
-
 	public Lilac(int amount)
 	{
-		name = "bez";
+		super();
 		this.amount = amount;
-		colour = "biały";
-//		System.out.println("creating flower");
+	}
+
+	@Override
+	String getName()
+	{
+		return "bez";
+	}
+
+	@Override
+	String getColour()
+	{
+		return "biały";
 	}
 
 }

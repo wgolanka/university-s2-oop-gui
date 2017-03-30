@@ -2,12 +2,21 @@ package zad2;
 
 public class Freesia extends Flower
 {
-
 	public Freesia(int amount)
 	{
-		name = "Frezja";
+		super();
 		this.amount = amount;
-		colour = "żółty";
 	}
 
+	@Override
+	String getName()
+	{
+		return "Frezja";
+	}
+
+	@Override
+	String getColour()
+	{
+		return "żółty";
+	}
 }
