@@ -1,13 +1,4 @@
-Welcome!
---------
-In this repository I'm working on my Object Oriented Programming and Graphical Users Interface classes.
-
-Briefly about projects:
-
- - In GUI1 :
-	 - created small simulation of bank system
-	 - created regex that would find specific chain letter
-	 - counted words from file and strored them in map and arrayList
-	 - read int values from file to array and found max value and its index
- - In GUI2 :
-  -  created small simulation of patients threatment by using abstract class and polimorphysm
+This is my first md editing
+# Welcome
+***
+## Here I store my "object-oriented programming & gui" class projects<br>| projects    | points gained | max points || -----       |:-----:        ||  [`RegexArt`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO1.html)  |     20        | 25|  [`Florist`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO2.html)   |  24           | 24|  [`Calculator`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO3.html) | tba           | tba
