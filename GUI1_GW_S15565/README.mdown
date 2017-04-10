@@ -1,6 +1,6 @@
-README
+## Instructions
 
-zad1 - small banking sytem simulation
-zad2 - find words in file using regex
-zad3 - read int values from file to array
-zad4 - read frm file and store values in map, count stored words
+# [zad1 - Banking system](https://sdkp.pjwstk.edu.pl/html/staskshtml/S_BANKING/S_BANKING.html)
+# [zad2 - Find by regex](https://sdkp.pjwstk.edu.pl/html/staskshtml/S_FINDER/S_FINDER.html)
+# [zad3 - Array and Scanner](https://sdkp.pjwstk.edu.pl/html/staskshtml/S_TAB/S_TAB.html)
+# [zad4 - Scan from file](https://sdkp.pjwstk.edu.pl/html/staskshtml/S_WORDS/S_WORDS.html)
