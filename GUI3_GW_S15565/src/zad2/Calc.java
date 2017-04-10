@@ -8,4 +8,10 @@ package zad2;
 
 
 public class Calc {
+
+	public String doCalc(String string)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 }  

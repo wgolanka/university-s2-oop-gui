@@ -10,15 +10,15 @@ package zad1;
 public class Test {
 
   public static void main(String[] args) {
-    Pacjent[] pacjenci = { new ChoryNaGlowe("Janek"),
-                           new ChoryNaNoge("Edzio"),
-                           new ChoryNaDyspepsje("Marian")
+    Patient[] patient = { new BrokenBone("John"),
+                           new Cold("Alex"),
+                           new RunnyNose("Marian")
                          };
 
-    for (Pacjent p : pacjenci) {
-      System.out.println("Pacjent:     " + p.nazwisko() + '\n' +
-                         "Chory na:    " + p.choroba() + '\n' +
-                         "Zastosowano: " + p.leczenie() +"\n\n"
+    for (Patient p : patient) {
+      System.out.println("Patient:     " + p.surname() + '\n' +
+                         "Sick on:     " + p.disease() + '\n' +
+                         "Treatment:   " + p.treatment() +"\n\n"
                          );
     }
   }
