@@ -12,13 +12,13 @@ public class Peony extends Flower
 	@Override
 	String getName()
 	{
-		return "piwonia";
+		return "peony";
 	}
 
 	@Override
 	String getColour()
 	{
-		return "czerwony";
+		return "red";
 	}
 
 }

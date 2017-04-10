@@ -11,7 +11,7 @@ public class Box extends Package
 	
 	public String toString()
 	{
-		return "Pudełko " + customer + "\n" + show(boxMap);
+		return "Box " + customer + "\n" + show(boxMap);
 	}
 
 }

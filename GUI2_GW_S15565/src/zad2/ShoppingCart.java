@@ -7,9 +7,9 @@ public class ShoppingCart extends Package
 	public String toString()
 	{
 		if(insideShoppingCart.isEmpty())
-			return " -- pusto";
+			return " -- empty";
 		
-		return "Wózek "+ customer + "\n" + show(insideShoppingCart);
+		return "Cart "+ customer + "\n" + show(insideShoppingCart);
 	}
 	
 }

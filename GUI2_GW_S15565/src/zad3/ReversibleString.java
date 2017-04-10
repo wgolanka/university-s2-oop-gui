@@ -31,7 +31,7 @@ public class ReversibleString implements Reversible
 		}
 		else
 		{
-			reversed = "Tekst " + word;
+			reversed = "Text " + word;
 			return this;
 		}
 	}

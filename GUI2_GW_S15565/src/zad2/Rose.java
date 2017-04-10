@@ -12,13 +12,13 @@ public class Rose extends Flower
 	@Override
 	String getName()
 	{
-		return "róża";
+		return "rose";
 	}
 
 	@Override
 	String getColour()
 	{
-		return "czerwony";
+		return "red";
 	}
 
 }

@@ -29,6 +29,6 @@ abstract class Flower
 	
 	public String toString()
 	{
-		return name + ", kolor: " + colour + ", ilość " + amount + ", cena " + price;
+		return name + ", colour: " + colour + ", amount " + amount + ", price " + price;
 	}
 }

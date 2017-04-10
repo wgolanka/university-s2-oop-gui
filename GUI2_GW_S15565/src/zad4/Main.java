@@ -10,39 +10,39 @@ package zad4;
 public class Main {
   public static void main(String[] args)
   {
-    Spiewak s1 = new Spiewak("Carrey"){
+    Singer s1 = new Singer("Carrey"){
 
 		@Override
-		String spiewaj()
+		String sing()
 		{
 			return "oooooooooooo";
 		}
     };
 
-    Spiewak s2 = new Spiewak("Houston"){
+    Singer s2 = new Singer("Houston"){
 
 		@Override
-		String spiewaj()
+		String sing()
 		{
 			return "a4iBBiii";
 		}
     };
 
-    Spiewak s3 = new Spiewak("Madonna"){
+    Singer s3 = new Singer("Madonna"){
 
 		@Override
-		String spiewaj()
+		String sing()
 		{
 			return "aAa";
 		}
     };
 
-    Spiewak sp[] = {s1, s2, s3};
+    Singer sp[] = {s1, s2, s3};
 
-    for (Spiewak s : sp)
+    for (Singer s : sp)
       System.out.println(s);
 
 
-    System.out.println("\n" + Spiewak.najglosniej(sp));
+    System.out.println("\n" + Singer.loudest(sp));
   }
 }

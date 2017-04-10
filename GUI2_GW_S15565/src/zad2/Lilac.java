@@ -11,13 +11,13 @@ public class Lilac extends Flower
 	@Override
 	String getName()
 	{
-		return "bez";
+		return "lilac";
 	}
 
 	@Override
 	String getColour()
 	{
-		return "biały";
+		return "white";
 	}
 
 }

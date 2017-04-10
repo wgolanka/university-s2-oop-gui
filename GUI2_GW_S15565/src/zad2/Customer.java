@@ -105,7 +105,7 @@ public class Customer
 	
 	public String toString()
 	{
-		return "właściciel " + name;
+		return "owner " + name;
 	}
 
 }

@@ -7,28 +7,28 @@
 package zad4;
 
 
-public abstract class Spiewak 
+public abstract class Singer 
 {
 	String surname;
 	int id;
-	static int addNextID = 1;
+	static int nextID = 1;
 
-	public Spiewak(String surname)
+	public Singer(String surname)
 	{
 		this.surname = surname;
-		id = addNextID;
-		addNextID++;
+		id = nextID;
+		nextID++;
 	}
 	
-	abstract String spiewaj();
+	abstract String sing();
 
-	public static Spiewak najglosniej(Spiewak[] sp)
+	public static Singer loudest(Singer[] sp)
 	{		
 		int loudest = 0, volume = 0, singer = 0;
 		
 		for(int i = 0; i < sp.length; i++)
 		{
-			String song = sp[i].spiewaj();
+			String song = sp[i].sing();
 			char[] array = song.toCharArray();
 			
 			for(int j = 0; j < array.length; j++)
@@ -51,6 +51,6 @@ public abstract class Spiewak
 	
 	public String toString()
 	{
-		return "(" + id + ") " + surname + ": " + spiewaj();
+		return "(" + id + ") " + surname + ": " + sing();
 	}
 }

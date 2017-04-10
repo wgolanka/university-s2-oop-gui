@@ -12,15 +12,15 @@ public class ReverseTest {
   public static void main(String[] args) {
   
         Reversible[] revers = new Reversible[] {
-            new ReversibleString("Kot"),
+            new ReversibleString("Cat"),
             new ReversibleDouble(2),
             new ReversibleDouble(3),
-            new ReversibleString("Pies"),
-            new ReversibleString("Ala ma kota i psa"),
+            new ReversibleString("Dog"),
+            new ReversibleString("She has dog and cat"),
             new ReversibleDouble(10),
         };
 
-        System.out.println("Normalne:");
+        System.out.println("Normally:");
         for (Reversible r : revers) {
           System.out.println(r);
         }
@@ -29,12 +29,12 @@ public class ReverseTest {
           r.reverse();
         }
 
-        System.out.println("Odwrócone:");
+        System.out.println("Reversed:");
         for (Reversible r : revers) {
           System.out.println(r);
         }
 
-        System.out.println("Przywrócone i zmienione:");
+        System.out.println("Restored and changed");
         for (Reversible r : revers) {
         	System.out.println(r.reverse());
         }

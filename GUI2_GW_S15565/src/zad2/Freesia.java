@@ -11,12 +11,12 @@ public class Freesia extends Flower
 	@Override
 	String getName()
 	{
-		return "Frezja";
+		return "Freesia";
 	}
 
 	@Override
 	String getColour()
 	{
-		return "żółty";
+		return "yellow";
 	}
 }
