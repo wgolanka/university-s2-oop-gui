@@ -6,12 +6,24 @@
 
 package zad2;
 
+import java.math.BigDecimal;
 
-public class Calc {
+public class Calc 
+{
+	BigDecimal bd;
+	String plus;
 
-	public String doCalc(String string)
+	public String doCalc(String string) 
 	{
-		// TODO Auto-generated method stub
-		return null;
+		
+		bd = new BigDecimal(string);
+		
+		return string;
+		
 	}
+	
+//	public String substract(String string )
+//	{
+//		
+//	}
 }  
