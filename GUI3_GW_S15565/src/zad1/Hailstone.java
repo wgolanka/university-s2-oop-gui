@@ -6,8 +6,7 @@ public class Hailstone implements Iterable<Integer>
 {
 	int start;
 	int next = 0;
-	boolean trueOne = true;
-	boolean falseOne = false;
+	int previousNext;
 	
 	public Hailstone(int ini)
 	{
@@ -22,13 +21,14 @@ public class Hailstone implements Iterable<Integer>
 			@Override
 			public boolean hasNext()
 			{	
-				return !falseOne;
+				return !(previousNext == 1 && next > previousNext);
 			}
 
 			@Override
 			public Integer next()
 			{	
 				if(next == 0) next = start;	
+				previousNext = next;
 				if(next % 2 == 0)
 				{
 					next = next /2;
@@ -38,12 +38,8 @@ public class Hailstone implements Iterable<Integer>
 					next = (3 * next) + 1;	
 				}
 				
-				if(trueOne == false) falseOne = true;
-				if(next == 1) trueOne = false;
-				
 				return next;
 			}		
 		};
 	}
-
 }
