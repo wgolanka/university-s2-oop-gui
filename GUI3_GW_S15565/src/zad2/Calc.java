@@ -23,13 +23,13 @@ public class Calc
 		
 		try
 		{	
-			numA = new BigDecimal(Double.valueOf(array[0]));
-			numB = new BigDecimal(Double.valueOf(array[2]));	
+			numA = new BigDecimal(array[0]);
+			numB = new BigDecimal(array[2]);	
 			String operator = array[1];
 			
-			Operator addition = (numA, numB) -> numA.add(numB, MathContext.DECIMAL32);		
-			Operator substraction = (numA, numB) -> numA.subtract(numB, MathContext.DECIMAL32);
-			Operator multiplication = (numA, numB) -> numA.multiply(numB, MathContext.DECIMAL32);
+			Operator addition = (numA, numB) -> numA.add(numB);		
+			Operator substraction = (numA, numB) -> numA.subtract(numB);
+			Operator multiplication = (numA, numB) -> numA.multiply(numB);
 			Operator division = (numA, numB) -> numA.divide(numB, MathContext.DECIMAL32);
 		 	
 			map.put("+", addition);
@@ -41,7 +41,6 @@ public class Calc
 		
 		}catch(Exception e)
 		{
-			e.printStackTrace();
 			return "Invalid command to calc";
 		}			
 	}
