@@ -14,37 +14,28 @@ public class Calc
 {
 	BigDecimal numA;
 	BigDecimal numB;
-	HashMap<String, BigMath> map;
-	
-	interface BigMath
-	{
-		BigDecimal operation(BigDecimal a, BigDecimal b);
-	}
+	HashMap<String, Operator> map;
 
 	public String doCalc(String string)
 	{
 		String[] array = string.split("\\s+");
-		map = new HashMap<String, BigMath>();
+		map = new HashMap<String, Operator>();
 		
 		try
-		{
-			numA = new BigDecimal(Integer.valueOf(array[0]));
-			numB = new BigDecimal(Integer.valueOf(array[2]));	
+		{	
+			numA = new BigDecimal(Double.valueOf(array[0]));
+			numB = new BigDecimal(Double.valueOf(array[2]));	
 			String operator = array[1];
 			
-			System.out.println("number A: " + numA);
-			System.out.println("Operator: " + operator);
-			System.out.println("number B: " + numB);
-			
-			BigMath addition = (numA, numB) -> numA.add(numB, MathContext.DECIMAL32);		
-			BigMath substraction = (numA, numB) -> numA.subtract(numB, MathContext.DECIMAL32);
-			BigMath multiply = (numA, numB) -> numA.multiply(numB, MathContext.DECIMAL32);
-			BigMath divide = (numA, numB) -> numA.divide(numB, MathContext.DECIMAL32);
+			Operator addition = (numA, numB) -> numA.add(numB, MathContext.DECIMAL32);		
+			Operator substraction = (numA, numB) -> numA.subtract(numB, MathContext.DECIMAL32);
+			Operator multiplication = (numA, numB) -> numA.multiply(numB, MathContext.DECIMAL32);
+			Operator division = (numA, numB) -> numA.divide(numB, MathContext.DECIMAL32);
 		 	
 			map.put("+", addition);
 			map.put("-", substraction);
-			map.put("*", multiply);
-			map.put("/", divide);
+			map.put("*", multiplication);
+			map.put("/", division);
 			
 			return String.valueOf(map.get(operator).operation(numA, numB));
 		

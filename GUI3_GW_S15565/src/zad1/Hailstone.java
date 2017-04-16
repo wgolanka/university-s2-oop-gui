@@ -5,12 +5,12 @@ import java.util.Iterator;
 public class Hailstone implements Iterable<Integer>
 {
 	int start;
-	int next = 0;
+	int next;
 	int previousNext;
 	
 	public Hailstone(int ini)
 	{
-		if(ini > 1)	start = ini;
+		start = ini;
 	}
 
 	@Override
@@ -21,6 +21,7 @@ public class Hailstone implements Iterable<Integer>
 			@Override
 			public boolean hasNext()
 			{	
+				if(start <= 1) return false;
 				return !(previousNext == 1 && next > previousNext);
 			}
 
@@ -29,6 +30,7 @@ public class Hailstone implements Iterable<Integer>
 			{	
 				if(next == 0) next = start;	
 				previousNext = next;
+				
 				if(next % 2 == 0)
 				{
 					next = next /2;
