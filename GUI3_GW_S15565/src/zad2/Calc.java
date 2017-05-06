@@ -30,7 +30,7 @@ public class Calc
 			Operator addition = (numA, numB) -> numA.add(numB);		
 			Operator substraction = (numA, numB) -> numA.subtract(numB);
 			Operator multiplication = (numA, numB) -> numA.multiply(numB);
-			Operator division = (numA, numB) -> numA.divide(numB, MathContext.DECIMAL32);
+			Operator division = (numA, numB) -> numA.divide(numB, MathContext.DECIMAL64);
 		 	
 			map.put("+", addition);
 			map.put("-", substraction);
