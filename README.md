@@ -1,4 +1,4 @@
-
-# Welcome!
+This is my first md editing
+# Welcome
 ***
-## In this repository I work on the "object-oriented programming & gui" class projects :><br>|projects   | points gained | max points || -----       |:-----:        |:--------:|  [`1.RegexArt`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO1.html)  |     20        | 25|  [`2.Florist`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO2.html)   |  24           | 24|  [`3.Calculator`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO3.html) | tba           | 11
+## Here I store my "object-oriented programming & gui" class projects##### Below you can find instructions for certain projects.<br>| projects    | points gained | max points || -----       |:-----:        |:--------:|  [`RegexArt`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO1.html)  |     20        | 25|  [`Florist`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO2.html)   |  24           | 24|  [`Calculator`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO3.html) | 11          | 11|  [`Concurrency`](https://sdkp.pjwstk.edu.pl/html/kb/L17/labshtml/GUIZAO4.html) | TBA         | 38
